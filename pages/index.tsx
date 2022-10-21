@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
-import Eye7 from '../public/Eye7.png'
+
 import { useEffect} from 'react'
 import Script from 'next/script'
 
@@ -13,11 +13,17 @@ import { signIn } from 'next-auth/react';
 import { useAccount, useConnect, useSignMessage, useDisconnect } from 'wagmi';
 import axios from 'axios';
 
+
+
+
 import Header from '../sections/Header'
 import Footer from '../sections/Footer'
+import Poweredby from  '../sections/Poweredby'
+import Faq from './Faq'
 import Title from '../components/typography/Title'
 import Subtitle from '../components/typography/Subtitle'
 import Button from '../components/buttons/Button'
+
 
 
 
@@ -29,7 +35,6 @@ const EyeSevenBox = styled.div`
     text-align: center;
     position: relative;
 `
-
 
 
 const Home: NextPage = () => {
@@ -80,20 +85,19 @@ const Home: NextPage = () => {
     
     <Container>
       <Head>
-        <title>Eyeseek Fund</title>
+        <title>Eyeese Seek Fund</title>
         <meta name="title" content="Blockchain crowdfunding application powered by Moralis" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
+   
+   
+    <Header/>
       <Title text='Components/Typography/Title'/>
       <Subtitle text='Components/Typography/Subtitle'/>
-      <Button text={'Components/buttons/button'}/>
-      <EyeSevenBox><Image
-            src={Eye7}
-            alt="Eye7"
-            width={'600%'}
-            height={'70%'}
-            />
+     <Faq/>
+
+
+      <EyeSevenBox>
             </EyeSevenBox>
       <Footer/>
       {/* <Script
@@ -119,3 +123,5 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+/*<Button text={'Components/buttons/button'}/>*/

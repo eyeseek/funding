@@ -87,7 +87,7 @@ const Header = () => {
             /></A></Link></NavItem> </ImageBox>
          <MenuBox>
             <NavItem onClick={()=>{setActive("Explained")}}>
-                {active === "Explained" ? <Link href="/explained"><AB>Example</AB></Link> : <Link href="/explained"><A>Example</A></Link>}
+                {active === "Explained" ? <Link href="/explained"><AB>Examplee</AB></Link> : <Link href="/explained"><A>Example</A></Link>}
             </NavItem>
         </MenuBox>
         </HeadBox>
