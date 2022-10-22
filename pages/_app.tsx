@@ -1,12 +1,11 @@
 import Head from 'next/head'
 import '../styles/globals.css'
-import { AppProps } from 'next/app'
 
 //Web3 auth
-import { Chain, createClient, configureChains, WagmiConfig } from 'wagmi';
-import { alchemyProvider } from 'wagmi/providers/alchemy'
-import { publicProvider } from 'wagmi/providers/public';
-import { SessionProvider } from 'next-auth/react';
+import { Chain, createClient, configureChains, WagmiConfig } from "wagmi"
+import { alchemyProvider } from "wagmi/providers/alchemy"
+import { publicProvider } from "wagmi/providers/public"
+import { SessionProvider } from "next-auth/react"
 
 const mumbai: Chain = {
   id: 80_001,
